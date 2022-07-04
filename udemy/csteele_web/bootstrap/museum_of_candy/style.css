@@ -1,0 +1,58 @@
+body {
+  background-color: #fff3e5;
+  font-family: "Trispace", sans-serif;
+}
+
+.blurbs h2 {
+  color: #ffa8af;
+  font-size: 2.25rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.blurbs p {
+  color: #56baba;
+  font-size: 1.25rem;
+  font-weight: 100;
+  line-height: 2;
+}
+.blurb {
+  margin-top: 5rem;
+}
+.blurb:last-of-type {
+  margin-bottom: 5rem;
+}
+
+#mainNav {
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+#mainNav .navbar-brand,
+#mainNav .nav-link {
+  color: #ffa8af;
+}
+#mainNav .nav-link:hover,
+#mainNav .active {
+  color: #56baba;
+}
+
+#headingGroup h2 {
+  color: #56baba;
+  font-size: 4rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+#headingGroup span {
+  color: #ffa8af;
+}
+
+.navbar.scrolled {
+  background-color: #b6ebfc;
+  transition: background-color 500ms;
+}
+
+@media (max-width: 1210px) {
+  #headingGroup h2 {
+    font-size: 3rem;
+  }
+}
