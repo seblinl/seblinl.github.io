@@ -1,0 +1,7 @@
+.hide {
+  display: none;
+}
+
+section article:not(:first-of-type) {
+  margin-top: 0.75rem;
+}
