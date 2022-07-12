@@ -18,6 +18,8 @@ const isShown = (navItem, contents) => {
 };
 
 mainNav.addEventListener("click", (e) => {
-  isHidden(mainNav.children, contentCollection);
-  isShown(e.target, contentCollection);
+  if (e.target.tagName === "A") {
+    isHidden(mainNav.children, contentCollection);
+    isShown(e.target, contentCollection);
+  }
 });

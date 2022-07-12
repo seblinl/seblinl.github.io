@@ -1,9 +1,9 @@
 const todo = [];
 
-let action = prompt("Input a command").toLowerCase();
+let action = prompt("Input a command");
 
 while (action !== "quit" && action !== "q") {
-  switch (action.toLowerCase()) {
+  switch (action) {
     case "new":
       const newEntry = prompt("Add a new todo entry");
       todo.push(newEntry);

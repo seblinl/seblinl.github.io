@@ -4,6 +4,8 @@ while (!maximum) {
   maximum = parseInt(prompt("Not valid, Try again"));
 }
 
+console.log("Input 'q' to quit");
+
 const random = Math.floor(Math.random() * maximum) + 1;
 console.log(`The number is between 1 and ${maximum}`);
 
@@ -25,5 +27,5 @@ if (guess.toLowerCase() === "q") {
     `Quitting the game after ${attempts} attempt(s), the number was ${random}`
   );
 } else {
-  console.log(`You guessed ${random} in ${attempts} attempt(s)`);
+  console.log(`You guessed the number (${random}) in ${attempts} attempt(s)`);
 }
