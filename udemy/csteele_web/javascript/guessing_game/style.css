@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div:not(:first-of-type) {
+  margin: 0.5rem auto;
+  width: 300px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+ul {
+  margin: 0;
+  margin-bottom: 0.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+button {
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  border-color: lightgrey;
+}
+
+.uLine {
+  text-decoration: underline;
+}
