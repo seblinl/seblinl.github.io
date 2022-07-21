@@ -1,2 +1,2 @@
 # seblinl.github.io
-Web project
+Portfolio project and practice opportunity, a tad rough around the edges.
