@@ -1,7 +1,7 @@
 header {
-  color: #756da6;
-  background-color: #a2a0d9;
-  padding: 6rem 0;
+  color: #dafdba;
+  background-color: #45c4b0;
+  padding: 6rem 0 3rem;
   text-align: center;
 }
 
@@ -10,20 +10,20 @@ section {
   text-align: center;
 }
 .features {
-  color: #ead5f2;
-  background-color: #d9a87e;
+  color: #13678a;
+  background-color: #9aeba3;
 }
 .quotes {
-  color: #ead5f2;
-  background-color: #bf9075;
+  color: #13678a;
+  background-color: #dafdba;
 }
 
 footer {
-  color: #a2a0d9;
-  background-color: #756da6;
+  color: #012030;
+  background-color: #13678a;
   padding: 2.5rem;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 footer ul {
   margin: 0;
@@ -34,29 +34,30 @@ footer li {
   display: inline-block;
 }
 footer li a {
-  color: #a2a0d9;
+  color: #012030;
   padding: 0.5rem;
   font-size: 1rem;
   text-decoration: none;
 }
 footer li a:hover {
-  color: #ead5f2;
+  color: #dafdba;
 }
 
 .btn {
   display: inline-block;
-  color: #ead5f2;
-  background-color: #756da6;
+  color: #45c4b0;
+  background-color: #012030;
   font-size: 1.25rem;
   font-weight: 500;
+  margin-top: 2rem;
   padding: 1rem;
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
 }
 .btn:hover {
-  color: #a2a0d9;
-  background-color: #ead5f2;
+  color: #13678a;
+  background-color: #9aeba3;
 }
 
 h1 {
