@@ -1,35 +1,37 @@
 const category = document.querySelector("#category");
 const id = document.querySelector("#id");
-const info = document.querySelector("#info-box");
+const infoBox = document.querySelector("#info-box");
 const searchBtn = document.querySelector("#searchBtn");
 const baseURL = "https://swapi.dev/api/";
 
 const printData = (key, value, target) => {
-  target.append(
-    `${(key[0].toUpperCase() + key.slice(1)).replace("_", " ")}: ${value}. `
+  const infoBit = document.createElement("p");
+  target.appendChild(infoBit);
+  infoBit.append(
+    `${(key[0].toUpperCase() + key.slice(1)).replace("_", " ")}: ${value}.`
   );
 };
 
 const getData = (url) => {
-  info.textContent = "Checking...";
+  infoBox.textContent = "Checking...";
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      info.textContent = "";
+      infoBox.textContent = "";
       for (let key in data) {
         const keywords = ["name", "gender", "hair_color", "height", "mass"];
         if (keywords.includes(key)) {
-          printData(key, data[key], info);
+          printData(key, data[key], infoBox);
         }
       }
     })
     .catch(() => {
-      info.textContent = "Try a different ID";
+      infoBox.textContent = "Try a different ID";
     });
 };
 
 searchBtn.addEventListener("click", () => {
-  info.innerHTML = "";
+  infoBox.innerHTML = "";
   let URL = "";
   if (category.value === "starships/" && id.value < 2) {
     URL = baseURL + category.value + (parseInt(id.value) + 1) + "/";
