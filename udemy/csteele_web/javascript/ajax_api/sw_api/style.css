@@ -27,3 +27,6 @@ button {
   border: 1px solid beige;
   border-radius: 0.25rem;
 }
+button:hover {
+  background-color: chocolate;
+}

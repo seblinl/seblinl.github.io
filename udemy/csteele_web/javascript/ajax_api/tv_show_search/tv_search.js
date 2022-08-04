@@ -1,4 +1,4 @@
-// https://api.tvmaze.com/search/shows?q=girls
+// https://api.tvmaze.com/search/shows?q=showName
 const getShows = async (query) => {
   const config = { params: { q: query } };
   const shows = await axios.get("https://api.tvmaze.com/search/shows", config);
@@ -6,6 +6,8 @@ const getShows = async (query) => {
 };
 
 const printImages = (shows) => {
+  const results = document.querySelector("#results");
+  results.innerHTML = "";
   for (let item of shows) {
     if (item.show.image) {
       const newImage = document.createElement("img");
